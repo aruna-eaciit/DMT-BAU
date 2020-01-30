@@ -1,0 +1,1752 @@
+DEBU[2020/01/30 14:27:25] {"Type":"","Page":0,"PerPage":10,"Skip":0,"SortField":"updt_dt","SortType":"desc","AdditionalFilter":{"logicalapplayername":[{"Type":"eq","Value":"Tier 1","Values":null}]},"BetweenFieldLogic":"","WithinFieldLogic":"","SourceTier":"","FieldReq":"","FieldReqs":null,"SkipAddEmptyData":false,"SkipAddExtraEmptyRow":false,"Unwind":false,"SortFields":{},"GroupBy":null}  source="controllers/ObjectDefinitionController.go:3859"
+DEBU[2020/01/30 14:27:25] len(payload.AdditionalFilter)1                source="controllers/ObjectDefinitionController.go:3869"
+DEBU[2020/01/30 14:27:25] {"Field":"","Op":"$and","Value":[{"Field":"","Op":"$and","Value":[{"Field":"logicalapplayername","Op":"$eq","Value":"Tier 1"}]}]}  source="controllers/ObjectDefinitionController.go:3874"
+DEBU[2020/01/30 14:27:25] <= End Request /objectdefinition/get from 10.20.174.212:9002 - 91d2dc07e5c1d61bb78822f36ccc1d52 [10.746148ms]  source="webapp/main.go:199"
+WARN[2020/01/30 14:27:27] <= End Request /objectdefinition/getobjectfiltervaluekendo from 10.20.174.212:9002 - 21953d599952370e2b31c24dfb1ae70f [2.317945334s]  source="webapp/main.go:197"
+WARN[2020/01/30 14:27:27] <= End Request /objectdefinition/getobjectfiltervaluekendo from 10.20.174.212:9002 - c8b6e11c70598748fc1636e0dc7c7023 [2.472286523s]  source="webapp/main.go:197"
+DEBU[2020/01/30 14:27:28] => Request /mapgroup/approvemultiple from 10.20.174.212:9002 - 22e4a19a50cf59774fafc36cca526908  source="webapp/main.go:191"
+DEBU[2020/01/30 14:27:28] Role admin Access check glob /mapgroup/approvemultiple : /mapgroup/* [approval bulk_approval] = true  source="controllers/base.go:939"
+INFO[2020/01/30 14:27:28] Counting mapping for EBBS~AE~EBBS_AE_TRNARC~COREBANKING_TRAN~1 183  source="models/MapGroup.go:1183"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046022                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ALERTSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ALERTSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ALERTSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046023                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046024                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select BLOCKBALANCEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select BLOCKBALANCEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select BLOCKBALANCEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046025                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select BUYCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select BUYCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select BUYCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046026                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTENDEDNARRATIVE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTENDEDNARRATIVE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTENDEDNARRATIVE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046027                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTENDEDNARRATIVE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTENDEDNARRATIVE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTENDEDNARRATIVE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046028                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTENDEDNARRATIVE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTENDEDNARRATIVE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTENDEDNARRATIVE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046029                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTENDEDNARRATIVE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTENDEDNARRATIVE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTENDEDNARRATIVE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046030                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTENDEDNARRATIVE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTENDEDNARRATIVE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTENDEDNARRATIVE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046031                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTENDEDNARRATIVE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTENDEDNARRATIVE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTENDEDNARRATIVE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046032                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CHEQUENO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CHEQUENO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CHEQUENO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046033                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CLRHOUSECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CLRHOUSECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CLRHOUSECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046034                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ATMID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ATMID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ATMID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046035                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTACENTRYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTACENTRYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTACENTRYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046036                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select COSTRATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select COSTRATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select COSTRATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046037                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CUSTOMERRATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CUSTOMERRATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CUSTOMERRATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046038                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select DESTIMDCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select DESTIMDCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select DESTIMDCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046039                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTREFNO2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTREFNO2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTREFNO2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046040                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTREFNO3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTREFNO3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTREFNO3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046041                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTERNALSYSTEMKEY from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTERNALSYSTEMKEY from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTERNALSYSTEMKEY from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046042                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXTREFNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXTREFNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXTREFNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046043                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select FORCEPOSTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select FORCEPOSTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select FORCEPOSTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046044                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select GLKEYFORTXNACCT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select GLKEYFORTXNACCT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select GLKEYFORTXNACCT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046045                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select GLDEPARTMENTID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select GLDEPARTMENTID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select GLDEPARTMENTID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046046                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CREDITDEBIT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CREDITDEBIT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CREDITDEBIT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046047                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INDICATIVERATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INDICATIVERATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INDICATIVERATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046048                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTBEARINGTRNFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTBEARINGTRNFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTBEARINGTRNFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046049                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTERESTUNCLEARFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTERESTUNCLEARFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTERESTUNCLEARFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046050                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTERESTVALUEDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTERESTVALUEDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTERESTVALUEDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046051                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTRADAYMIDRT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTRADAYMIDRT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTRADAYMIDRT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046052                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTRADAYUTILAMT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTRADAYUTILAMT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTRADAYUTILAMT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046053                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTRADAYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTRADAYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTRADAYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046054                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTRADAYLIMITNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTRADAYLIMITNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTRADAYLIMITNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046055                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select INTRADAYMASTNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select INTRADAYMASTNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select INTRADAYMASTNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046056                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CHARGECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CHARGECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CHARGECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046057                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select BANKCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select BANKCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select BANKCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046058                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ROUTINGNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ROUTINGNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ROUTINGNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046059                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CHANNELID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CHANNELID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CHANNELID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046060                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select LCYEQUALENT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select LCYEQUALENT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select LCYEQUALENT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046061                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select DESTCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select DESTCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select DESTCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046062                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046063                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046064                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046065                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046066                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046067                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046068                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE7 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE7 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE7 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046069                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE8 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE8 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE8 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046070                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE9 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE9 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE9 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046071                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select MISCODE10 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select MISCODE10 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select MISCODE10 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046072                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select NONFINANCIALTRNTYP from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select NONFINANCIALTRNTYP from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select NONFINANCIALTRNTYP from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046073                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ONLINETRIGGERFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ONLINETRIGGERFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ONLINETRIGGERFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046074                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ORIGINALCHRGAMOUNT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ORIGINALCHRGAMOUNT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ORIGINALCHRGAMOUNT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046075                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select TRANSACTIONAMOUNT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select TRANSACTIONAMOUNT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select TRANSACTIONAMOUNT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046076                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046077                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046078                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select VALUEDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select VALUEDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select VALUEDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046079                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select BATCHENTRYDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select BATCHENTRYDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select BATCHENTRYDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046080                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046081                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select TRNREFERENCENO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select TRNREFERENCENO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select TRNREFERENCENO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046082                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select BATCHNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select BATCHNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select BATCHNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046083                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select STATUSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select STATUSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select STATUSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046084                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select TRANSTYPECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select TRANSTYPECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select TRANSTYPECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046085                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select TRNCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select TRNCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select TRNCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046086                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select NARRATION1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select NARRATION1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select NARRATION1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046087                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select NARRATION2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select NARRATION2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select NARRATION2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046088                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select NARRATION3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select NARRATION3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select NARRATION3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046089                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select NARRATION4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select NARRATION4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select NARRATION4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046090                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select NARRATION5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select NARRATION5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select NARRATION5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046091                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select NARRATION6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select NARRATION6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select NARRATION6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046092                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ORIGINATORID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ORIGINATORID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ORIGINATORID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046093                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select FINANCIALTRNFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select FINANCIALTRNFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select FINANCIALTRNFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046094                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select PRODUCTCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select PRODUCTCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select PRODUCTCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046096                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'XX' FROM X     source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'XX' FROM X    source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'XX' FROM X   source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046097                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'XX' FROM X     source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'XX' FROM X    source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'XX' FROM X   source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046098                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'Note: This is ETL process date' FROM X  source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'Note: This is ETL process date' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'Note: This is ETL process date' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046099                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'Note: This is mapping id from the excel sheets e.g. SCI_PRTY_01' FROM X  source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'Note: This is mapping id from the excel sheets e.g. SCI_PRTY_01' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'Note: This is mapping id from the excel sheets e.g. SCI_PRTY_01' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046100                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046101                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'TRNARC' FROM X  source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'TRNARC' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'TRNARC' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046102                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REVERSALFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REVERSALFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REVERSALFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046103                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046104                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select BENEACCNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select BENEACCNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select BENEACCNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046105                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select BENECURRCD from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select BENECURRCD from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select BENECURRCD from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046106                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select DEALNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select DEALNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select DEALNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046107                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046108                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046109                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046110                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046111                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ADVTREASURYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ADVTREASURYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ADVTREASURYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046112                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select APPINSUFFFUNDSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select APPINSUFFFUNDSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select APPINSUFFFUNDSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046113                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select QUEUEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select QUEUEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select QUEUEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046114                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select POSTENGINESTAMP from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select POSTENGINESTAMP from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select POSTENGINESTAMP from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046115                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ATMTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ATMTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ATMTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046116                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select AVAILABLEBALANCE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select AVAILABLEBALANCE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select AVAILABLEBALANCE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046117                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CHANGEVALUEDTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CHANGEVALUEDTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CHANGEVALUEDTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046118                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE1 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046119                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE10 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE10 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE10 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046120                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE2 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046121                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE3 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046122                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE4 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046123                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE5 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046124                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE6 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046125                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE7 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE7 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE7 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046126                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE8 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE8 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE8 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046127                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select REASONCODE9 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select REASONCODE9 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select REASONCODE9 from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046128                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select SELLCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select SELLCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select SELLCURRENCYCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046129                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select SOURCEIMDCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select SOURCEIMDCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select SOURCEIMDCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046130                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select SYSGENERATEDFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select SYSGENERATEDFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select SYSGENERATEDFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046131                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CRDTUSERBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CRDTUSERBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CRDTUSERBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046132                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CRDTUSERDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CRDTUSERDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CRDTUSERDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046133                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CRDTUSERID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CRDTUSERID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CRDTUSERID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046134                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CRDTUSERIPADDRESS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CRDTUSERIPADDRESS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CRDTUSERIPADDRESS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046135                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select CRDTUSERTIME from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select CRDTUSERTIME from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select CRDTUSERTIME from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046136                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ERRORACCOUNTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ERRORACCOUNTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ERRORACCOUNTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046137                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ERRORACCOUNTNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ERRORACCOUNTNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ERRORACCOUNTNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046138                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXCESSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXCESSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXCESSFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046139                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select EXPORTTOFINISFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select EXPORTTOFINISFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select EXPORTTOFINISFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046140                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ORGVALDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ORGVALDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ORGVALDT from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046141                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select PALPRODIND from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select PALPRODIND from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select PALPRODIND from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046142                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select POSTTRNPROCSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select POSTTRNPROCSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select POSTTRNPROCSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046143                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select PRETRNPROCSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select PRETRNPROCSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select PRETRNPROCSTATUS from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046144                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select PROTECTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select PROTECTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select PROTECTFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046145                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select RELBATCHENTRYDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select RELBATCHENTRYDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select RELBATCHENTRYDATE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046146                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select RELBATCHNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select RELBATCHNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select RELBATCHNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046147                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select RELCHANNELID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select RELCHANNELID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select RELCHANNELID from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046148                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select RELSEQNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select RELSEQNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select RELSEQNO from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046149                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select RELTRANSBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select RELTRANSBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select RELTRANSBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046150                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select RETURNZONECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select RETURNZONECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select RETURNZONECODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046151                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select RTNREASONCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select RTNREASONCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select RTNREASONCODE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046152                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select SPARROWMSGTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select SPARROWMSGTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select SPARROWMSGTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046153                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select SPARROWTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select SPARROWTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select SPARROWTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046154                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select SURROUNDSYSTEM from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select SURROUNDSYSTEM from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select SURROUNDSYSTEM from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046155                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select SWEEPFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select SWEEPFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select SWEEPFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046156                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select TRNSOURCEBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select TRNSOURCEBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select TRNSOURCEBRANCH from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046157                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select TRNSOURCETYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select TRNSOURCETYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select TRNSOURCETYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046158                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select TXNATTRIBFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select TXNATTRIBFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select TXNATTRIBFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046159                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select SYSENTRYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select SYSENTRYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select SYSENTRYFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046160                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select ATMDELETEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select ATMDELETEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select ATMDELETEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046161                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select UNCLRRELEASEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select UNCLRRELEASEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select UNCLRRELEASEFLAG from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046162                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT select UPLDTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:667"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:673"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT select UPLDTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:699"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:705"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT select UPLDTRNTYPE from EBBS_AE_TRNARC FROM X  source="models/Mapping.go:722"
+ERRO[2020/01/30 14:27:28] found {Select, "select"}, expected field      source="models/Mapping.go:728"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046163                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046164                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046165                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046166                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046167                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046168                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046169                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046170                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046171                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046172                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046173                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046174                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046175                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046176                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046177                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046178                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046179                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046180                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046181                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT 'NULL' FROM X   source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT 'NULL' FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046379                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT EBBS_AE_CHRG.DESCRIPTION FROM X  source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT EBBS_AE_CHRG.DESCRIPTION FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT EBBS_AE_CHRG.DESCRIPTION FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046380                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT CASE WHEN (EBBS_AE_TRNARC.STATUSFLAG = '1') THEN 'ACTIVE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '2') THEN 'AUTHORISE_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '3') THEN 'AUTHORISE_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '4') THEN 'CREATE_INCOMPLETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '5') THEN 'MODIFY_INCOMPLETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '6') THEN 'REJECT_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '7') THEN 'REJECT_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '8') THEN 'INACTIVE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '9') THEN 'VERIFY_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '10') THEN 'VERIFY_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '11') THEN 'ABORT_TRANSACTION' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '12') THEN 'AUTHORISE_DELETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '13') THEN 'REJECT_DELETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '14') THEN 'CLOSED' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '15') THEN 'AUTHORISE_CLOSE' ELSE 'DMT LIMIT MAX 15 CASES, REFER MAP NOTE FOR THE REST OF THE CASES' END FROM X  source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT CASE WHEN (EBBS_AE_TRNARC.STATUSFLAG = '1') THEN 'ACTIVE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '2') THEN 'AUTHORISE_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '3') THEN 'AUTHORISE_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '4') THEN 'CREATE_INCOMPLETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '5') THEN 'MODIFY_INCOMPLETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '6') THEN 'REJECT_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '7') THEN 'REJECT_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '8') THEN 'INACTIVE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '9') THEN 'VERIFY_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '10') THEN 'VERIFY_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '11') THEN 'ABORT_TRANSACTION' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '12') THEN 'AUTHORISE_DELETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '13') THEN 'REJECT_DELETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '14') THEN 'CLOSED' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '15') THEN 'AUTHORISE_CLOSE' ELSE 'DMT LIMIT MAX 15 CASES, REFER MAP NOTE FOR THE REST OF THE CASES' END FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT CASE WHEN (EBBS_AE_TRNARC.STATUSFLAG = '1') THEN 'ACTIVE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '2') THEN 'AUTHORISE_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '3') THEN 'AUTHORISE_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '4') THEN 'CREATE_INCOMPLETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '5') THEN 'MODIFY_INCOMPLETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '6') THEN 'REJECT_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '7') THEN 'REJECT_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '8') THEN 'INACTIVE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '9') THEN 'VERIFY_CREATE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '10') THEN 'VERIFY_MODIFY' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '11') THEN 'ABORT_TRANSACTION' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '12') THEN 'AUTHORISE_DELETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '13') THEN 'REJECT_DELETE' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '14') THEN 'CLOSED' WHEN (EBBS_AE_TRNARC.STATUSFLAG = '15') THEN 'AUTHORISE_CLOSE' ELSE 'DMT LIMIT MAX 15 CASES, REFER MAP NOTE FOR THE REST OF THE CASES' END FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] Parsing Expression                            source="sql-ast/parser.go:903"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046381                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT EBBS_AE_TRNTYPE.DESCRIPTION FROM X  source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT EBBS_AE_TRNTYPE.DESCRIPTION FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT EBBS_AE_TRNTYPE.DESCRIPTION FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046382                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT EBBS_AE_TRNCD.DESCRIPTION FROM X  source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT EBBS_AE_TRNCD.DESCRIPTION FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT EBBS_AE_TRNCD.DESCRIPTION FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046384                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT EBBS_AE_CHNL.NAME FROM X  source="models/Mapping.go:667"
+DEBU[2020/01/30 14:27:28] Getting WhereField SQL: SELECT EBBS_AE_CHNL.NAME FROM X  source="models/Mapping.go:699"
+DEBU[2020/01/30 14:27:28] Getting HavingField SQL: SELECT EBBS_AE_CHNL.NAME FROM X  source="models/Mapping.go:722"
+DEBU[2020/01/30 14:27:28] MAPIDMID00000046385                           source="models/MapGroup.go:1190"
+DEBU[2020/01/30 14:27:28] Getting FromField SQL: SELECT CONCAT ('EBBS', '-', 'XX', '-', TRIM(EBBS_AE_TRNARC.TRANSACTIONBRANCH, '-', TRIM(EBBS_AE_TRNARC.CHANNELID, '-', TRIM(EBBS_AE_TRNARC.BATCHNO, '-', TRIM(EBBS_AE_TRNARC.SEQNO, '-', TRIM(EBBS_AE_TRNARC.BATCHENTRYDATE) ) FROM X  source="models/Mapping.go:667"
+fatal error: runtime: out of memory
+
+runtime stack:
+runtime.throw(0x109da71, 0x16)
+        c:/go/src/runtime/panic.go:774 +0x72
+runtime.sysMap(0xc5e8000000, 0x1b8000000, 0x1d6c8d8)
+        c:/go/src/runtime/mem_linux.go:169 +0xc5
+runtime.(*mheap).sysAlloc(0x1d4a340, 0x1b65fc000, 0xc000081e00, 0x435e57)
+        c:/go/src/runtime/malloc.go:701 +0x1cd
+runtime.(*mheap).grow(0x1d4a340, 0xdb2fe, 0xffffffff)
+        c:/go/src/runtime/mheap.go:1255 +0xa3
+runtime.(*mheap).allocSpanLocked(0x1d4a340, 0xdb2fe, 0x1d6c8e8, 0x1cec620)
+        c:/go/src/runtime/mheap.go:1170 +0x266
+runtime.(*mheap).alloc_m(0x1d4a340, 0xdb2fe, 0x100, 0x0)
+        c:/go/src/runtime/mheap.go:1022 +0xc2
+runtime.(*mheap).alloc.func1()
+        c:/go/src/runtime/mheap.go:1093 +0x4c
+runtime.(*mheap).alloc(0x1d4a340, 0xdb2fe, 0xc000010100, 0x427af0)
+        c:/go/src/runtime/mheap.go:1092 +0x8a
+runtime.largeAlloc(0x1b65fc000, 0x450001, 0xc44c3a2000)
+        c:/go/src/runtime/malloc.go:1138 +0x97
+runtime.mallocgc.func1()
+        c:/go/src/runtime/malloc.go:1033 +0x46
+runtime.systemstack(0x0)
+        c:/go/src/runtime/asm_amd64.s:370 +0x66
+runtime.mstart()
+        c:/go/src/runtime/proc.go:1146
+
+goroutine 811 [running]:
+runtime.systemstack_switch()
+        c:/go/src/runtime/asm_amd64.s:330 fp=0xc0017c9e38 sp=0xc0017c9e30 pc=0x459bb0
+runtime.mallocgc(0x1b65fc000, 0xfc9c60, 0x1, 0x0)
+        c:/go/src/runtime/malloc.go:1032 +0x895 fp=0xc0017c9ed8 sp=0xc0017c9e38 pc=0x40c675
+runtime.growslice(0xfc9c60, 0xc44c3a2000, 0xe9ccaaa, 0xe9ccaaa, 0xe9ccaab, 0xc44c3a2000, 0xbb0a155, 0xe9ccaaa)
+        c:/go/src/runtime/slice.go:181 +0x1e2 fp=0xc0017c9f40 sp=0xc0017c9ed8 pc=0x444752
+eaciit/dmt/webapp/pkg/sql-ast.(*Parser).ParseAggregate(0xc0006a4c00, 0xc000292070, 0x0, 0x0)
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/sql-ast/parser.go:720 +0x405 fp=0xc0017ca040 sp=0xc0017c9f40 pc=0x834b85
+eaciit/dmt/webapp/pkg/sql-ast.(*Parser).Parse(0xc0006a4c00, 0xc0017ca7b0, 0x0, 0x0)
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/sql-ast/parser.go:329 +0x3638 fp=0xc0017ca6f0 sp=0xc0017ca040 pc=0x832948
+eaciit/dmt/webapp/models.(*Mapping).GetFromFieldFromQuery(0xc000100000, 0x1, 0xc000a4e7f0, 0x1, 0x1, 0x0)
+        E:/Go Project/src/eaciit/dmt/webapp/models/Mapping.go:671 +0x204 fp=0xc0017caa20 sp=0xc0017ca6f0 pc=0xa16644
+eaciit/dmt/webapp/models.(*MapGroup).GetAllSelect(0xc000714948, 0x162a2e0, 0xc000203340, 0x1d4ba78, 0x203000, 0x203000, 0x203000, 0x7f0af67c7cf0, 0x2, 0x203000, ...)
+        E:/Go Project/src/eaciit/dmt/webapp/models/MapGroup.go:1193 +0x736 fp=0xc0017caf30 sp=0xc0017caa20 pc=0xa0dfc6
+eaciit/dmt/webapp/models.(*MapGroup).UpdateGeneratedMapGrp(0xc0017ce948, 0x162a2e0, 0xc000203340)
+        E:/Go Project/src/eaciit/dmt/webapp/models/MapGroup.go:412 +0x5d fp=0xc0017cb490 sp=0xc0017caf30 pc=0xa030ad
+eaciit/dmt/webapp/controllers.(*MapGroupController).ApproveMultiple(0xc0000d6520, 0xc0012ee0f0, 0x0, 0x0)
+        E:/Go Project/src/eaciit/dmt/webapp/controllers/MapGroup.go:913 +0x3177 fp=0xc0017d1950 sp=0xc0017cb490 pc=0xc999a7
+runtime.call32(0xc000425320, 0xc000402008, 0xc000ba2300, 0x1000000020)
+        c:/go/src/runtime/asm_amd64.s:539 +0x3b fp=0xc0017d1980 sp=0xc0017d1950 pc=0x459f6b
+reflect.callMethod(0xc00035f140, 0xc0017d1a60, 0xc0017d1a48)
+        c:/go/src/reflect/value.go:714 +0x1f0 fp=0xc0017d1a30 sp=0xc0017d1980 pc=0x4ab220
+reflect.methodValueCall(0xc0012ee0f0, 0x0, 0x0, 0xc000330120, 0xd, 0xc0004449c5, 0x19, 0x1611300, 0xc00001d100, 0xc000035540, ...)
+        c:/go/src/reflect/asm_amd64.s:35 +0x42 fp=0xc0017d1a60 sp=0xc0017d1a30 pc=0x4b4c42
+eaciit/dmt/webapp/pkg/knot.(*Server).RouteWithConfig.func1(0x161dce0, 0xc0002a20e0, 0xc000d38000)
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/knot/server.go:217 +0x21a fp=0xc0017d1b90 sp=0xc0017d1a60 pc=0x7bacca
+net/http.HandlerFunc.ServeHTTP(0xc00001d100, 0x161dce0, 0xc0002a20e0, 0xc000d38000)
+        c:/go/src/net/http/server.go:2007 +0x44 fp=0xc0017d1bb8 sp=0xc0017d1b90 pc=0x6cedb4
+net/http.(*ServeMux).ServeHTTP(0xc00042e280, 0x161dce0, 0xc0002a20e0, 0xc000d38000)
+        c:/go/src/net/http/server.go:2387 +0x1bd fp=0xc0017d1c18 sp=0xc0017d1bb8 pc=0x6d0d8d
+net/http.serverHandler.ServeHTTP(0xc00033a2a0, 0x161dce0, 0xc0002a20e0, 0xc000d38000)
+        c:/go/src/net/http/server.go:2802 +0xa4 fp=0xc0017d1c48 sp=0xc0017d1c18 pc=0x6d2304
+net/http.(*conn).serve(0xc0000dca00, 0x16209e0, 0xc00009c600)
+        c:/go/src/net/http/server.go:1890 +0x875 fp=0xc0017d1fc8 sp=0xc0017d1c48 pc=0x6cdba5
+runtime.goexit()
+        c:/go/src/runtime/asm_amd64.s:1357 +0x1 fp=0xc0017d1fd0 sp=0xc0017d1fc8 pc=0x45bb01
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 1 [chan receive, 10 minutes]:
+eaciit/dmt/webapp/pkg/knot.(*Server).listen(0xc00042c300)
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/knot/server.go:325 +0x63
+eaciit/dmt/webapp/pkg/knot.(*Server).Listen(0xc00042c300)
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/knot/server.go:291 +0x39
+eaciit/dmt/webapp/pkg/knot.startContainer(0xc000473b20, 0xc00042c300, 0xc00059fcb0, 0x1)
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/knot/appcontainer.go:229 +0x7e8
+eaciit/dmt/webapp/pkg/knot.StartContainerWithServerAndFn(...)
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/knot/appcontainer.go:184
+main.main()
+        E:/Go Project/src/eaciit/dmt/webapp/main.go:290 +0x1f6d
+
+goroutine 19 [syscall, 10 minutes]:
+os/signal.signal_recv(0x0)
+        c:/go/src/runtime/sigqueue.go:147 +0x9c
+os/signal.loop()
+        c:/go/src/os/signal/signal_unix.go:23 +0x22
+created by os/signal.init.0
+        c:/go/src/os/signal/signal_unix.go:29 +0x41
+
+goroutine 20 [select]:
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoCluster).syncServersLoop(0xc000162e00)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/cluster.go:394 +0x2d8
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newCluster
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/cluster.go:78 +0x158
+
+goroutine 53 [select]:
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoCluster).syncServersLoop(0xc0003a0000)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/cluster.go:394 +0x2d8
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newCluster
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/cluster.go:78 +0x158
+
+goroutine 49 [sleep]:
+runtime.goparkunlock(...)
+        c:/go/src/runtime/proc.go:310
+time.Sleep(0x37e11d600)
+        c:/go/src/runtime/time.go:105 +0x157
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoServer).pinger(0xc00033a000, 0x1)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/server.go:301 +0x480
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newServer
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/server.go:89 +0x106
+
+goroutine 35 [IO wait]:
+internal/poll.runtime_pollWait(0x7f0af67cfc70, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00014ba18, 0x72, 0x0, 0x24, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00014ba00, 0xc0000d5290, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00014ba00, 0xc0000d5290, 0x24, 0x24, 0x0, 0x0, 0xc00014ba00)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc0002c6010, 0xc0000d5290, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.fill(0x162a580, 0xc0002c6010, 0xc0000d5290, 0x24, 0x24, 0x0, 0xa9)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:535 +0x53
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoSocket).readLoop(0xc0003ac000)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:551 +0x54c
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newSocket
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:194 +0x1c8
+
+goroutine 52 [IO wait]:
+internal/poll.runtime_pollWait(0x7f0af67cfe10, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00032e218, 0x72, 0x0, 0x24, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00032e200, 0xc000384000, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00032e200, 0xc000384000, 0x24, 0x24, 0x0, 0x0, 0xc00032e200)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000332018, 0xc000384000, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.fill(0x162a580, 0xc000332018, 0xc000384000, 0x24, 0x24, 0x0, 0xa9)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:535 +0x53
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoSocket).readLoop(0xc00033a0e0)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:551 +0x54c
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newSocket
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:194 +0x1c8
+
+goroutine 26 [sleep]:
+runtime.goparkunlock(...)
+        c:/go/src/runtime/proc.go:310
+time.Sleep(0x37e11d600)
+        c:/go/src/runtime/time.go:105 +0x157
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoServer).pinger(0xc0002a22a0, 0x1)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/server.go:301 +0x480
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newServer
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/server.go:89 +0x106
+
+goroutine 41 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cfd40, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00014a218, 0x72, 0x0, 0x24, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00014a200, 0xc0000d4180, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00014a200, 0xc0000d4180, 0x24, 0x24, 0x0, 0x0, 0xc00014a200)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc0000d60c8, 0xc0000d4180, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.fill(0x162a580, 0xc0000d60c8, 0xc0000d4180, 0x24, 0x24, 0x0, 0x67c)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:535 +0x53
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoSocket).readLoop(0xc00033a1c0)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:551 +0x54c
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newSocket
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:194 +0x1c8
+
+goroutine 42 [select]:
+eaciit/dmt/webapp/controllers.(*EDCIntegrationController).Setup.func1(0xc0004540a0, 0xc000030440)
+        E:/Go Project/src/eaciit/dmt/webapp/controllers/EDCIntegration.go:83 +0xcd
+created by eaciit/dmt/webapp/controllers.(*EDCIntegrationController).Setup
+        E:/Go Project/src/eaciit/dmt/webapp/controllers/EDCIntegration.go:79 +0xbe
+
+goroutine 63 [select, 10 minutes]:
+main.main.func7(0xc00042c360, 0xc00042c300, 0xc000030480, 0x16209e0, 0xc00042e180)
+        E:/Go Project/src/eaciit/dmt/webapp/main.go:280 +0xbd
+created by main.main
+        E:/Go Project/src/eaciit/dmt/webapp/main.go:279 +0x1ee1
+
+goroutine 7 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cfba0, 0x72, 0x0)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0002a0518, 0x72, 0x0, 0x0, 0x108a51f)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Accept(0xc0002a0500, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:384 +0x1f8
+net.(*netFD).accept(0xc0002a0500, 0xc0000c3d48, 0x6d32b4, 0xc00033a340)
+        c:/go/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc00029e7a0, 0x5e32772c, 0xc0000c3d48, 0x47f196)
+        c:/go/src/net/tcpsock_posix.go:139 +0x32
+net.(*TCPListener).Accept(0xc00029e7a0, 0xc0000c3d98, 0x18, 0xc0004d0480, 0x6d27ce)
+        c:/go/src/net/tcpsock.go:261 +0x47
+net/http.(*Server).Serve(0xc00033a2a0, 0x161da20, 0xc00029e7a0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:2896 +0x286
+net/http.(*Server).ListenAndServe(0xc00033a2a0, 0xc00033a2a0, 0x0)
+        c:/go/src/net/http/server.go:2825 +0xb7
+net/http.ListenAndServe(...)
+        c:/go/src/net/http/server.go:3080
+eaciit/dmt/webapp/pkg/knot.(*Server).start.func1(0xc00042c300, 0xc0003d0268, 0x5)
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/knot/server.go:307 +0xa5
+created by eaciit/dmt/webapp/pkg/knot.(*Server).start
+        E:/Go Project/src/eaciit/dmt/webapp/pkg/knot/server.go:299 +0x130
+
+goroutine 64 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cfad0, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0002ae018, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0002ae000, 0xc0002ba000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0002ae000, 0xc0002ba000, 0x1000, 0x1000, 0xc00053d9e8, 0x4c4bfd, 0xc0002ae000)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc0002b0000, 0xc0002ba000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc0001a6d50, 0xc0002ba000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc0002b8000)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc0002b8000, 0x4, 0x0, 0x0, 0x0, 0x0, 0xc00053dad0)
+        c:/go/src/bufio/bufio.go:138 +0x4f
+net/http.(*conn).readRequest(0xc0002ac000, 0x16209e0, 0xc0001bc000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:962 +0xb3b
+net/http.(*conn).serve(0xc0002ac000, 0x16209e0, 0xc0001bc000)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 81 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cfa00, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0002ae098, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0002ae080, 0xc0002cc000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0002ae080, 0xc0002cc000, 0x1000, 0x1000, 0xc0011c19e8, 0x4c4bfd, 0xc0002ae080)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc0002b0008, 0xc0002cc000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc0001a70e0, 0xc0002cc000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc0002b8060)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc0002b8060, 0x4, 0x0, 0x0, 0x0, 0x0, 0xc0011c1ad0)
+        c:/go/src/bufio/bufio.go:138 +0x4f
+net/http.(*conn).readRequest(0xc0002ac0a0, 0x16209e0, 0xc0001bc0c0, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:962 +0xb3b
+net/http.(*conn).serve(0xc0002ac0a0, 0x16209e0, 0xc0001bc0c0)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 45 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf790, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0005bbf18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0005bbf00, 0xc0002e8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0005bbf00, 0xc0002e8000, 0x1000, 0x1000, 0xc0014ad9e8, 0x4c4bfd, 0xc0005bbf00)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000652140, 0xc0002e8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc0005c2150, 0xc0002e8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc0004fe120)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc0004fe120, 0x4, 0x0, 0x0, 0x0, 0x0, 0xc0014adad0)
+        c:/go/src/bufio/bufio.go:138 +0x4f
+net/http.(*conn).readRequest(0xc0000dc3c0, 0x16209e0, 0xc00042e700, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:962 +0xb3b
+net/http.(*conn).serve(0xc0000dc3c0, 0x16209e0, 0xc00042e700)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 105 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf860, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00032eb18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00032eb00, 0xc000014000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00032eb00, 0xc000014000, 0x1000, 0x1000, 0xc0010fb9e8, 0x4c4bfd, 0xc00032eb00)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000332008, 0xc000014000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc0001a7290, 0xc000014000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc00057e000)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc00057e000, 0x4, 0x0, 0x0, 0x0, 0x0, 0xc0010fbad0)
+        c:/go/src/bufio/bufio.go:138 +0x4f
+net/http.(*conn).readRequest(0xc0002ac140, 0x16209e0, 0xc0000da040, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:962 +0xb3b
+net/http.(*conn).serve(0xc0002ac140, 0x16209e0, 0xc0000da040)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 177 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf930, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00014a098, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00014a080, 0xc000012000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00014a080, 0xc000012000, 0x1000, 0x1000, 0xc0013259e8, 0x4c4bfd, 0xc00014a080)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000692010, 0xc000012000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc000440090, 0xc000012000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc0005a8000)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc0005a8000, 0x4, 0x0, 0x0, 0x0, 0x0, 0xc001325ad0)
+        c:/go/src/bufio/bufio.go:138 +0x4f
+net/http.(*conn).readRequest(0xc0001d8000, 0x16209e0, 0xc00009c140, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:962 +0xb3b
+net/http.(*conn).serve(0xc0001d8000, 0x16209e0, 0xc00009c140)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 179 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf6c0, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00014bb18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00014bb00, 0xc0003b8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00014bb00, 0xc0003b8000, 0x1000, 0x1000, 0xc0017f19e8, 0x4c4bfd, 0xc00014bb00)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000692020, 0xc0003b8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc000440270, 0xc0003b8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc0005a8240)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc0005a8240, 0x4, 0x0, 0x0, 0x0, 0x0, 0xc0017f1ad0)
+        c:/go/src/bufio/bufio.go:138 +0x4f
+net/http.(*conn).readRequest(0xc0001d8140, 0x16209e0, 0xc00009c780, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:962 +0xb3b
+net/http.(*conn).serve(0xc0001d8140, 0x16209e0, 0xc00009c780)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 216 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf5f0, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0002aef98, 0x72, 0x0, 0x24, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0002aef80, 0xc000626000, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0002aef80, 0xc000626000, 0x24, 0x24, 0x0, 0x0, 0xc0002aef80)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000185218, 0xc000626000, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.fill(0x162a580, 0xc000185218, 0xc000626000, 0x24, 0x24, 0x0, 0x5ec)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:535 +0x53
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoSocket).readLoop(0xc000453180)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:551 +0x54c
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newSocket
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:194 +0x1c8
+
+goroutine 835 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67dffe0, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00098a218, 0x72, 0x0, 0x24, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00098a200, 0xc000baf9b0, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00098a200, 0xc000baf9b0, 0x24, 0x24, 0x0, 0x0, 0xc00098a200)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000332980, 0xc000baf9b0, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.fill(0x162a580, 0xc000332980, 0xc000baf9b0, 0x24, 0x24, 0x0, 0x234a3)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:535 +0x53
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoSocket).readLoop(0xc000969420)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:551 +0x54c
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newSocket
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:194 +0x1c8
+
+goroutine 866 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cef70, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0005baa18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0005baa00, 0xc000bb4000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0005baa00, 0xc000bb4000, 0x1000, 0x1000, 0x0, 0x3030320000000000, 0xed5c46e32)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000692000, 0xc000bb4000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc000ba6090, 0xc000bb4000, 0x1000, 0x1000, 0xc00080e040, 0x1cde04c, 0x2)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc000bb2000)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc000bb2000, 0xa, 0xc00073bb28, 0xc00073b9a8, 0x40c0f6, 0xc000162c00, 0x100)
+        c:/go/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc000bb2000, 0xc00073b9b0, 0xc000074e00, 0x7f0af8a33008, 0x0, 0x0, 0xc00073b9f0)
+        c:/go/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc00065e1e0, 0xc000162c00, 0xc0005baa00, 0x0, 0x0, 0x42fe6c)
+        c:/go/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+        c:/go/src/net/textproto/reader.go:38
+net/http.readRequest(0xc000bb2000, 0x0, 0xc000162c00, 0x0, 0x0)
+        c:/go/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc0001d8280, 0x16209e0, 0xc00080e000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc0001d8280, 0x16209e0, 0xc00080e000)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 748 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67e0180, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0001ae818, 0x72, 0x0, 0x1, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0001ae800, 0xc000b320a1, 0x1, 0x1, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0001ae800, 0xc000b320a1, 0x1, 0x1, 0xc00009cbd8, 0xc000625768, 0x467dfc)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000652000, 0xc000b320a1, 0x1, 0x1, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).backgroundRead(0xc000b32090)
+        c:/go/src/net/http/server.go:677 +0x58
+created by net/http.(*connReader).startBackgroundRead
+        c:/go/src/net/http/server.go:673 +0xd4
+
+goroutine 533 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf2b0, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0001afc98, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0001afc80, 0xc0006f6000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0001afc80, 0xc0006f6000, 0x1000, 0x1000, 0x10cf9e0, 0x24, 0xc0006db7e0)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000184e30, 0xc0006f6000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc0002e65a0, 0xc0006f6000, 0x1000, 0x1000, 0x0, 0x8, 0x2000)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc00050e0c0)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc00050e0c0, 0x300a, 0xc0006db940, 0xc0006db9a8, 0x40c0f6, 0xc000d38400, 0x100)
+        c:/go/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc00050e0c0, 0xc0006db9b0, 0xc000074e00, 0x7f0af8a34b28, 0x0, 0x4, 0xc0006db9f0)
+        c:/go/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc0005c21e0, 0xc000d38400, 0xc0001afc80, 0x0, 0x0, 0x42fe6c)
+        c:/go/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+        c:/go/src/net/textproto/reader.go:38
+net/http.readRequest(0xc00050e0c0, 0x0, 0xc000d38400, 0x0, 0x0)
+        c:/go/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc0002b40a0, 0x16209e0, 0xc000416040, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc0002b40a0, 0x16209e0, 0xc000416040)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 315 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf450, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0005d1318, 0x72, 0x0, 0x24, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0005d1300, 0xc000496810, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0005d1300, 0xc000496810, 0x24, 0x24, 0x0, 0x0, 0xc0005d1300)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000184f70, 0xc000496810, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.fill(0x162a580, 0xc000184f70, 0xc000496810, 0x24, 0x24, 0x0, 0x25d214)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:535 +0x53
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoSocket).readLoop(0xc0004522a0)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:551 +0x54c
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newSocket
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:194 +0x1c8
+
+goroutine 417 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf520, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0001af198, 0x72, 0x0, 0x24, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0001af180, 0xc000384a20, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0001af180, 0xc000384a20, 0x24, 0x24, 0x0, 0x0, 0xc0001af180)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000332120, 0xc000384a20, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.fill(0x162a580, 0xc000332120, 0xc000384a20, 0x24, 0x24, 0x0, 0x11)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:535 +0x53
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoSocket).readLoop(0xc0003ac380)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:551 +0x54c
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newSocket
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:194 +0x1c8
+
+goroutine 165 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf380, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000590398, 0x72, 0x0, 0x24, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000590380, 0xc000039410, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000590380, 0xc000039410, 0x24, 0x24, 0x0, 0x0, 0xc000590380)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc0004021d0, 0xc000039410, 0x24, 0x24, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.fill(0x162a580, 0xc0004021d0, 0xc000039410, 0x24, 0x24, 0x0, 0x72)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:535 +0x53
+eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.(*mongoSocket).readLoop(0xc000452540)
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:551 +0x54c
+created by eaciit/dmt/webapp/vendor/gopkg.in/mgo%2ev2.newSocket
+        E:/Go Project/src/eaciit/dmt/webapp/vendor/gopkg.in/mgo.v2/socket.go:194 +0x1c8
+
+goroutine 851 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf1e0, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00032ee18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00032ee00, 0xc00026e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00032ee00, 0xc00026e000, 0x1000, 0x1000, 0x10cf9e0, 0xb8, 0xc0004637e0)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc0005cdd60, 0xc00026e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc000b2e0c0, 0xc00026e000, 0x1000, 0x1000, 0xc0004638b8, 0xc0004638a8, 0x7e004c4ce2)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc000564660)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc000564660, 0x50a, 0x7f0af65dcd90, 0xc0004639a8, 0x40c0f6, 0xc000c5e100, 0x100)
+        c:/go/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc000564660, 0xc0004639b0, 0xc000378700, 0x7f0af8a336d0, 0x0, 0x10272a0, 0xc00107d920)
+        c:/go/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc00107d920, 0xc000c5e100, 0xc00032ee00, 0x0, 0x0, 0x42fe6c)
+        c:/go/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+        c:/go/src/net/textproto/reader.go:38
+net/http.readRequest(0xc000564660, 0x0, 0xc000c5e100, 0x0, 0x0)
+        c:/go/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc0002ec140, 0x16209e0, 0xc000416000, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc0002ec140, 0x16209e0, 0xc000416000)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 867 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf040, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000990018, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000990000, 0xc000bba000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000990000, 0xc000bba000, 0x1000, 0x1000, 0x10cf9e0, 0x80, 0xc0003757e0)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000692028, 0xc000bba000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc000ba6180, 0xc000bba000, 0x1000, 0x1000, 0xc0002ae600, 0x0, 0x7e00000000)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc000bb2060)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc000bb2060, 0xc0010d800a, 0x7f0af8a3f0e8, 0xc0003759a8, 0x40c0f6, 0xc000162400, 0x100)
+        c:/go/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc000bb2060, 0xc0003759b0, 0xc000308000, 0x7f0af8a34460, 0x0, 0x10272a0, 0xc000dd4bd0)
+        c:/go/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc000dd4bd0, 0xc000162400, 0xc000990000, 0x0, 0x0, 0x42fe6c)
+        c:/go/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+        c:/go/src/net/textproto/reader.go:38
+net/http.readRequest(0xc000bb2060, 0x0, 0xc000162400, 0x0, 0x0)
+        c:/go/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc0001d8500, 0x16209e0, 0xc00080e0c0, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc0001d8500, 0x16209e0, 0xc00080e0c0)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
+goroutine 870 [IO wait, 1 minutes]:
+internal/poll.runtime_pollWait(0x7f0af67cf110, 0x72, 0xffffffffffffffff)
+        c:/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0002a0298, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+        c:/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+        c:/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0002a0280, 0xc000630000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0002a0280, 0xc000630000, 0x1000, 0x1000, 0x400, 0x7f0af6885000, 0x20300000000000)
+        c:/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000692008, 0xc000630000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+        c:/go/src/net/net.go:184 +0x68
+net/http.(*connReader).Read(0xc0002d0150, 0xc000630000, 0x1000, 0x1000, 0x7f0af65951a8, 0x403b74, 0x6a00203000)
+        c:/go/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc00042c3c0)
+        c:/go/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc00042c3c0, 0xa, 0x0, 0xc0004e19a8, 0x40c2e4, 0xc000c5e000, 0x100)
+        c:/go/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc00042c3c0, 0xc0004e19b0, 0xc0004cc380, 0x7f0af8a36648, 0xc00044ad80, 0x40c968, 0x30)
+        c:/go/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc000dd4000, 0xc000c5e000, 0xc0002a0280, 0x0, 0x0, 0x15efd5e)
+        c:/go/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+        c:/go/src/net/textproto/reader.go:38
+net/http.readRequest(0xc00042c3c0, 0x0, 0xc000c5e000, 0x0, 0x0)
+        c:/go/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc0002b4000, 0x16209e0, 0xc000434280, 0x0, 0x0, 0x0)
+        c:/go/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc0002b4000, 0x16209e0, 0xc000434280)
+        c:/go/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2927 +0x38e
+
