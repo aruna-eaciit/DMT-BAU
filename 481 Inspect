@@ -1,0 +1,74 @@
+Console:
+
+DevTools failed to parse SourceMap: chrome-extension://iffnipbkkgbgeffippbaldmgdpealpdd/documentEndIndex.js.map
+mapping-page.js?nocache=Xhgcn3InsgLQKM-OnFO690DAGsHOzLDj:312 res: {IsError: false, Data: Array(10), Message: "", MessageArray: null, Total: 47961}IsError: falseData: (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]Message: ""MessageArray: nullTotal: 47961__proto__: Object
+mapping-page.js?nocache=Xhgcn3InsgLQKM-OnFO690DAGsHOzLDj:2797 /mapping/getfilterdefinition (3) [{…}, {…}, {…}]
+mapping-page.js?nocache=Xhgcn3InsgLQKM-OnFO690DAGsHOzLDj:2832 initFilterSystemName
+mapping-page.js?nocache=Xhgcn3InsgLQKM-OnFO690DAGsHOzLDj:2797 /mapping/getfilterdefinition (2) [{…}, {…}]
+mapping-page.js?nocache=Xhgcn3InsgLQKM-OnFO690DAGsHOzLDj:312 res: {IsError: false, Data: Array(7), Message: "", MessageArray: null, Total: 7}IsError: falseData: (7) [{…}, {…}, {…}, {…}, {…}, {…}, {…}]Message: ""MessageArray: nullTotal: 7__proto__: Object
+mapping-page.js?nocache=Xhgcn3InsgLQKM-OnFO690DAGsHOzLDj:7376 v: {ResultName: "", SelectedCountry: Array(1), TriggerSelectAllCountry: false, SelectAllCountry: false}ResultName: ""SelectedCountry: Array(1)0: "CN"length: 1__proto__: Array(0)length: 0constructor: ƒ Array()concat: ƒ concat()copyWithin: ƒ copyWithin()fill: ƒ fill()find: ƒ find()findIndex: ƒ findIndex()lastIndexOf: ƒ lastIndexOf()pop: ƒ pop()push: ƒ push()reverse: ƒ reverse()shift: ƒ shift()unshift: ƒ unshift()slice: ƒ slice()sort: ƒ sort()splice: ƒ splice()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()entries: ƒ entries()values: ƒ values()forEach: ƒ forEach()filter: ƒ filter()flat: ƒ flat()flatMap: ƒ flatMap()map: ƒ map()every: ƒ every()some: ƒ some()reduce: ƒ reduce()reduceRight: ƒ reduceRight()toLocaleString: ƒ toLocaleString()toString: ƒ toString()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {copyWithin: true, entries: true, fill: true, find: true, findIndex: true, …}__proto__: ObjectTriggerSelectAllCountry: falseSelectAllCountry: false__proto__: constructor: ƒ Object()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()hasOwnProperty: ƒ hasOwnProperty()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toString: ƒ toString()valueOf: ƒ valueOf()toLocaleString: ƒ toLocaleString()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+mapping-page.js?nocache=Xhgcn3InsgLQKM-OnFO690DAGsHOzLDj:7378 va: CN true
+
+Header:
+
+Request URL: http://10.20.174.212:9001/dashboard/getjob
+Request Method: POST
+Status Code: 200 OK
+Remote Address: 10.20.174.212:9001
+Referrer Policy: no-referrer-when-downgrade
+Content-Length: 816
+Content-Type: application/json; charset=utf-8
+Date: Mon, 27 Apr 2020 02:29:49 GMT
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Content-Length: 26
+Content-Type: application/json charset=UTF-8
+Cookie: KnotSessionId=VZRJeTCvvvha8M_Gx4X4LJv1248P-zKz
+DNT: 1
+Host: 10.20.174.212:9001
+Origin: http://10.20.174.212:9001
+Referer: http://10.20.174.212:9001/mapping/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36
+X-Requested-With: XMLHttpRequest
+{JobID: "JOB00000000849"}
+JobID: "JOB00000000849"
+
+Preview:
+
+IsError: false,…}
+IsError: false
+Data: {_id: "JOB00000000849", Name: "Mapping - CloneMapping - 20200427102946.922537985", Type: "CLONE",…}
+_id: "JOB00000000849"
+Name: "Mapping - CloneMapping - 20200427102946.922537985"
+Type: "CLONE"
+TypeID: "Mapping.CloneMapping"
+IsSingleJob: true
+Data: {}
+DataObject: {targets: [{country: ["CN"], id: "MID00000128346"}, {country: ["CN"], id: "MID00000128347"},…]}
+targets: [{country: ["CN"], id: "MID00000128346"}, {country: ["CN"], id: "MID00000128347"},…]
+0: {country: ["CN"], id: "MID00000128346"}
+1: {country: ["CN"], id: "MID00000128347"}
+2: {country: ["CN"], id: "MID00000128348"}
+3: {country: ["CN"], id: "MID00000128343"}
+4: {country: ["CN"], id: "MID00000128344"}
+5: {country: ["CN"], id: "MID00000128345"}
+6: {country: ["CN"], id: "MID00000128342"}
+Status: -1
+Message: "Error: When Cloning DPR:DPR with name(s):  already exist"
+LogFile: ""
+LogFileType: 0
+LogModel: {}
+CreatedBy: "123456"
+CreatedAt: "2020-04-27T10:29:46.924+08:00"
+StartTime: "2020-04-27T10:29:46.924+08:00"
+EndTime: "2020-04-27T10:29:47.08+08:00"
+Message: ""
+MessageArray: null
+Total: 0
+
+
+Response:
+
+{"IsError":false,"Data":{"_id":"JOB00000000849","Name":"Mapping - CloneMapping - 20200427102946.922537985","Type":"CLONE","TypeID":"Mapping.CloneMapping","IsSingleJob":true,"Data":{},"DataObject":{"targets":[{"country":["CN"],"id":"MID00000128346"},{"country":["CN"],"id":"MID00000128347"},{"country":["CN"],"id":"MID00000128348"},{"country":["CN"],"id":"MID00000128343"},{"country":["CN"],"id":"MID00000128344"},{"country":["CN"],"id":"MID00000128345"},{"country":["CN"],"id":"MID00000128342"}]},"Status":-1,"Message":"Error: When Cloning DPR:DPR with name(s):  already exist","LogFile":"","LogFileType":0,"LogModel":{},"CreatedBy":"123456","CreatedAt":"2020-04-27T10:29:46.924+08:00","StartTime":"2020-04-27T10:29:46.924+08:00","EndTime":"2020-04-27T10:29:47.08+08:00"},"Message":"","MessageArray":null,"Total":0}
